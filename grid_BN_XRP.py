@@ -1,20 +1,20 @@
 import asyncio
-import websockets
+import hashlib
+import hmac
 import json
 import logging
-import hmac
-import hashlib
-import time
-import ccxt
 import math
 import os
-import asyncio
+import time
+
+import ccxt
+import websockets
 
 # ==================== 配置 ====================
 API_KEY = ""  # 替换为你的 API Key
 API_SECRET = ""  # 替换为你的 API Secret
 COIN_NAME = "XRP"  # 交易币种
-CONTRACT_TYPE = "USDC"  # 合约类型：USDT 或 USDC
+CONTRACT_TYPE = "USDT"  # 合约类型：USDT 或 USDC
 GRID_SPACING = 0.001  # 网格间距 (0.3%)
 INITIAL_QUANTITY = 3  # 初始交易数量 (币数量)
 LEVERAGE = 20  # 杠杆倍数
