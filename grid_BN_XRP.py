@@ -11,16 +11,17 @@ import ccxt
 import websockets
 
 # ==================== 配置 ====================
+#测试api
 API_KEY = ""  # 替换为你的 API Key
 API_SECRET = ""  # 替换为你的 API Secret
 COIN_NAME = "XRP"  # 交易币种
 CONTRACT_TYPE = "USDT"  # 合约类型：USDT 或 USDC
 GRID_SPACING = 0.001  # 网格间距 (0.3%)
-INITIAL_QUANTITY = 3  # 初始交易数量 (币数量)
+INITIAL_QUANTITY = 0.3  # 初始交易数量 (币数量)
 LEVERAGE = 20  # 杠杆倍数
 WEBSOCKET_URL = "wss://fstream.binance.com/ws"  # WebSocket URL
-POSITION_THRESHOLD = 500  # 锁仓阈值
-POSITION_LIMIT = 100  # 持仓数量阈值
+POSITION_THRESHOLD = 50  # 锁仓阈值
+POSITION_LIMIT = 10  # 持仓数量阈值
 SYNC_TIME = 10  # 同步时间（秒）
 ORDER_FIRST_TIME = 10  # 首单间隔时间
 
